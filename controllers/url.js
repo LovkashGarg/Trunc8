@@ -19,7 +19,7 @@ async function handleGenerateNewShortURL(req, res) {
             // existRecord= await URL.findOneAndUpdate({shortID:existRecord.shortID},
             //     { $push: { visitedHistory: { timestamp: Date.now() } } } )
             // If the URL exists, return the existing short URL
-            return res.json({ newurl: `https://trunc8.onrender.com/${existRecord.shortID} `,shortID:existRecord.shortID });
+            return res.json({ newurl: `https://trunc8-backend.onrender.com/${existRecord.shortID} `,shortID:existRecord.shortID });
         }
     // console.log("hello")
         // Generate a new short ID
