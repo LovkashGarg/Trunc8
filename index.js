@@ -33,10 +33,13 @@ connectToMongoDb(process.env.MONGO_DB_ATLAS_URL)
 
 app.get('/:shortId',async(req,res)=>{
       const shortId=req.params.shortId;
-    //   console.log(shortId)
+      // console.log("hello " + shortId)
      const entry= await URL.findOneAndUpdate({shortID:shortId},{$push:{visitHistory:{timestamp:Date.now()}}})
-      res.redirect(entry.Redirect_url);
+     console.log(entry.Redirect_url);
+     res.redirect(entry.Redirect_url);
 })
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });

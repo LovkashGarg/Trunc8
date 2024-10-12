@@ -33,7 +33,7 @@ async function handleGenerateNewShortURL(req, res) {
         });
 
         // Return the newly created short URL
-        return res.json({ newurl: `https://trunc8.onrender.com/${shortID}`, shortID:shortID});
+        return res.json({ newurl: `https://trunc8-backend.onrender.com/${shortID}`, shortID:shortID});
     } catch (error) {
         console.error("Error generating short URL:", error);
         return res.status(500).json({
