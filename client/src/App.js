@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className="App flex flex-col items-center px-4 sm:px-8 lg:px-16 mx-auto max-w-[1200px]">
-      <h1 className="text-[40px] bg-black text-white font-mono mt-8 mb-4 px-[20px] text-center">SpongeIt</h1>
+      <h1 className="text-[40px] bg-black text-white font-mono mt-8 mb-4 px-[20px] text-center">Trunc8</h1>
       
       <form 
         onSubmit={handlesubmit}
