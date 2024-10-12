@@ -16,7 +16,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://trunc8-backend.onrender.com', {
+      const response = await fetch('https://trunc8-backend.onrender.com/url', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // Send as JSON
